@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Despedida</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .carta {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(12px);
+            animation: fadeIn 2s ease;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #d6336c;
+            animation: slideInDown 1s ease;
+            font-size: 1.8rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease forwards;
+            font-size: 1rem;
+        }
+
+        .firma {
+            margin-top: 30px;
+            font-style: italic;
+            animation: fadeInUp 1s ease forwards;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .foto {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.95);}
+            to {opacity: 1; transform: scale(1);}
+        }
+
+        @keyframes slideInDown {
+            from {transform: translateY(-50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        @keyframes fadeInUp {
+            from {transform: translateY(50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <h1>Hasta Siempre</h1>
+        <p>Hola, quería escribirte estas palabras con el corazón tranquilo. Sé que a veces el camino nos lleva por diferentes direcciones, y aunque duele, hay cosas que simplemente deben ser.</p>
+        <p>Te agradezco por cada momento, por cada palabra, por todo lo que compartimos. Siempre vas a tener un lugar en mi memoria y en mi historia. Y aunque nos toque despedirnos, eso no cambia lo que significaste para mí.</p>
+        <p>Cuídate mucho, sonríe siempre y recuerda que eres una persona increíble. Jamás olvides que, aunque no estemos, para mí siempre serás mi manga favorite, la historia que me marcó de una forma que no se repite dos veces.</p>
+        <p>Gracias por tanto, por todo. Hasta siempre.</p>
+        <img src="cc692c17-28a8-443e-a9c3-b72b6a18647b.png" alt="Recuerdo" class="foto">
+        <div class="firma">
+            Con cariño y paz,<br>
+            Juanito 
+        </div>
+    </div>
+</body>
+</html>
